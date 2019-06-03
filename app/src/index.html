@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MetaCoin | Truffle Webpack Demo w/ Frontend</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+      <h1>Dapp para registro de derechos de autor</h1>
+      <!--<p>You have <strong class="balance">loading...</strong> META</p>-->
+      <h1>Guardar Documento</h1>
+      <label for="lblHashIpfs">Hash IPFS de documento:</label>
+      <input type="text" id="tbxHashIpfsDoc" placeholder="e.j. QmdPEQb8zEQPw9rg7XMwMfHjrYXC3WZabAnH86gHYz5c1f" />
+      <label for="lblCuenta">Nombre Documento:</label>
+      <input type="text" id="tbxNombreDocumento" placeholder="" />
+      <button onclick="Registrar()">Guardar Registro</button>
+
+      <div class="table-responsive">
+          <table id="TablaRegistros" class="table table-bordered" border="1">
+              <thead>
+                  <tr>
+                      <th>Nombre Documento</th>
+                      <th>Hash Documento</th>
+                  </tr>
+              </thead>
+              <tbody id="cuerpo">
+                  <tr>
+                      <td id="NombreDoc"></td>
+                      <td id="HashDoc"></td>
+                  </tr>
+              </tbody>
+          </table>
+          <div id="msg"></div>
+      </div>
+      <p id="status"></p>
+      <!--<script src="index.js"></script>-->
+      <script src="index.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+              integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+  </body>
+</html>
